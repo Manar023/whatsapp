@@ -20,15 +20,58 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
         }
         h1 {
-            color: #333;
+            color: #8f0303;
+            margin-bottom: 10px;
         }
         p {
-            color: #555;
+            color: #000000;
+            margin: 10px 0;
+        }
+        .offer {
+            background-color: #8f0303;
+            color: #fffc00;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 40px;
+            font-weight: bold;
+            position: relative;
+        }
+        .offer-title {
+            color: #fffc00;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .offer-price {
+            font-size: 48px;
+            color: #fffc00;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .features {
+            color: #8f0303;
+            text-align: right;
+            margin-top: 30px;
+            padding-right: 20px;
+        }
+        .features li {
+            list-style: none;
+            font-size: 15px;
+            margin: 5px 0;
+            position: relative;
+        }
+        .features li::after {
+            content: '✔';
+            color: #28a745;
+            position: absolute;
+            right: -20px;
         }
         .whatsapp-button {
-            background-color: #25d366;
+            background-color: #008130;
             color: #fff;
             padding: 15px 20px;
             border: none;
@@ -37,7 +80,7 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
         }
         .whatsapp-button:hover {
             background-color: #1ebe5d;
@@ -46,8 +89,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>أهلاً بكم في منصة منار التعليمية لشرح المنهاج التركي  </h1>
-        <p>لحضور درس تجريبي والاستفادة من الخصومات يرجى النقر على الزر أدناه للتحدث معنا عبر واتساب.</p>
+        <h1>أهلاً بكم في منصة منار التعليمية</h1>
+        <div class="offer">
+            <div class="offer-title">عرض الامتحانات فقط</div>
+            <div class="offer-price">
+                ليرة  <span>  3000  </span>
+            </div>
+            <div>لنهاية العام الدراسي</div>
+        </div>
+        <ul class="features">
+            <li>دروس أونلاين يومياً</li>
+            <li>اختبارات أسبوعية للطلاب</li>
+            <li>ملخصات بعد كل درس يومياً</li>
+            <li>تدريب الطلاب على التعامل مع نظام الاختبارات المدرسية</li>
+        </ul>
+        <p>للتواصل المباشر والاستفسارات، يرجى النقر على الزر أدناه للتحدث معنا عبر واتساب.</p>
         <a href="https://api.whatsapp.com/send/?phone=905387677170&text=مرحبا،+أرغب+بمعرفة+المزيد+عن+العرض&type=phone_number&app_absent=0" class="whatsapp-button">
             تواصل معنا عبر واتساب
         </a>
